@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!---   Name: Bradley Hartlove
+        Assignment: CS336 Assignment #8
+        Date Created: April 17, 2021
+        Description: This will be the base page for the conference website. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content={{ pageName }}", Assignment 8, CS336"/>
+    <meta name="author" content="Bradley Hartlove"/>
+    <meta name="robots" content="index, follow"/>
+    <link href="{{url_for('static', filename='css/webdefault.css')}}" type="text/css" rel="stylesheet"/>
+    <meta name="description" content={{ description }}/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="horizontalsection">
+    <header>
+        {% include 'nav.html' %}
+    </header>
+</div>
+<main>
+    {% block content %}
+
+
+    {% endblock %}
+</main>
+
+<div class="horizontalsection">
+    <footer>
+        <address id="address">
+            <!-- This is the contact information, formatted to be smaller than the rest of the page -->
+            <small>Mailing address: PO Box 1162 Stevensville, MD 21666</small><br>
+            <small>Telephone number: 443-786-8077</small><br>
+            <small>Email us: <a href="mailto:bhartlove@regis.edu">Bradley Hartlove</a></small><br>
+            <p>
+                <!--Italicized footer -->
+                <i>While this web site was created to satisfy the requirement of<br>
+                    building a web site for an academic course at Regis University, the<br>
+                    views and opinions expressed on this web site are solely those of<br>
+                    the original author and do not necessarily represent the views and<br>
+                    opinions of Regis University.</i><br>
+            </p>
+        </address>
+    </footer>
+</div>
+</body>
+</html>

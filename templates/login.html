@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form action="" method="post">
+
+        <div class="loginDisplay">
+            <h3>Programming Conference</h3>
+            <span>Welcome Back!</span><br/><br/>
+            <span><i>Sign in to access the Admin Page</i></span><br/><br>
+            <label class="loginLabel">Username:
+                <input class="username" type="text" name="username" required="required"
+                       placeholder="Username" maxlength="30" title="Username">
+            </label><br/><br/>
+            <label class="loginLabel">Password:
+                <input class="password" type="password" name="password" required="required"
+                       placeholder="Password" maxlength="30" title="Password">
+            </label>
+            <input type="submit" name="Login" value="Login" title="Login" class="loginButton">
+        </div>
+    </form>
+{% endblock %}

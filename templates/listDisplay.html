@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="listTitle">{{ listTitle }}</h1>
+    <div class="listDisplay">
+        <table class = "listTable">
+            <tr>
+                <th id = "listHead">Name of Registrant</th>
+            </tr>
+            {% for reg in registrantList %}
+                <tr id ="listRow">
+                    <td>{{ reg }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

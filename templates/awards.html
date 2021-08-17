@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+ <h1>Top Programming Submissions</h1>
+    <table class = "awardTable">
+        <tr>
+            <th>Entry</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img class = "tableimage" src="/static/images/java_submission.png" alt="Snake game written in Java"></td>
+            <td>Submission #1 by Eric S.</td>
+            <td>Eric recreated the classic snake game, but this time in Java instead of Python!</td>
+        </tr>
+        <tr>
+            <td><img class = "tableimage" src="/static/images/suduko_submission.png" alt="Suduko game written in Python"></td>
+            <td>Submission #2 by Sally J.</td>
+            <td>Sally recreated Sudoku using Python with fully functioning AI opponents!</td>
+        </tr>
+        <tr>
+            <td><img class = "tableimage" src="/static/images/platformer_submission.jpg" alt="Platformer created in Java"></td>
+            <td>Submission #3 by Jesse H.</td>
+            <td>Jesse created a unique platformer using Java!</td>
+        </tr>
+    </table>
+    <br/><br/>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="../static/js/voteLogic.js"></script>
+    <h1>
+        About the Poll
+    </h1>
+    <p>
+        Here are the three nominees (please select one to vote for the <i>Best in Programming</i> award):<br><br/>
+        <span class="thankyouMessage">{{ message }}</span><br/>
+    </p>
+    <form action = 'http://127.0.0.1:5000/awards.html' method="post">
+        <fieldset class="poll_fieldset" id="voting">
+            <label><b>Nominees:</b><br/><br/>
+                <input type="radio" name="nominee" value="Eric S." id="Eric" class="vote" required="required"/> Eric S.
+                <span class="nomineeInfo" id="nomineeOne">Current Vote Count: </span><br/>
+                <input type="radio" name="nominee" id="Sally" value="Sally J." class="vote"/> Sally J.
+                <span class="nomineeInfo" id="nomineeTwo">Current Vote Count: </span><br/>
+                <input type="radio" name="nominee" id="Jesse" value="Jesse H." class="vote"/> Jesse H.
+                <span class="nomineeInfo" id="nomineeThree">Current Vote Count: </span><br/>
+            </label>
+
+        </fieldset>
+        <br/><br/>
+        <input type="submit" name="Submit" value="Submit" title="Submit" onclick="onVote()">
+    </form>
+    <div id="d3-container"></div>
+    <br/><br/>
+{% endblock %}

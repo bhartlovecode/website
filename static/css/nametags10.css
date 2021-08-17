@@ -1,0 +1,90 @@
+html body.bodyForNameTagsTen main div.horizontalRowTen{
+    width: 100%;
+    display: block;
+}
+
+.nameTagFullNameTen{
+    color:green;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.nameTagPositionTen{
+    color:red;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenTopLeft{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-left: 30mm;
+    padding-top: 15mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenTopRight{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-top: 15mm;
+    padding-right:30mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenBottomLeft{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-left:30mm;
+    padding-bottom: 15mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenBottomRight{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-right:30mm;
+    padding-bottom: 15mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenLeft{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-left: 30mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTagsTen main div.horizontalRowTen div.nameTagTenRight{
+    text-align: center;
+    width: 76mm;
+    height: 50mm;
+    padding-right:30mm;
+    display:block;
+    float:left;
+
+}
+
+
+html body.bodyForNameTagsTen{
+    background-color: white;
+    width: 212mm;
+    margin: auto;
+    text-align: center;
+    font-size:12pt;
+}
+

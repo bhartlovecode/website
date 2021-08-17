@@ -1,0 +1,397 @@
+/*  Name: Bradley Hartlove
+Assignment: CS336 Assignment #4
+Date Created: March 18, 2021
+Description: This CSS will provide basic text editing to all files in the project */
+
+/*Basic colors and indentation*/
+p{
+    text-indent: 45px;
+    color: white;
+    font-size: 125%;
+}
+
+
+html body main .adminDiv a{
+    color: aqua;
+}
+
+html body main .adminDiv{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav{
+    background-color: darkslategrey;
+}
+
+
+h1,h2{
+    color: darkslategrey;
+}
+
+/*Horizontal and Vertical sections to be used as containers within the website*/
+.horizontalsection {
+    clear: both;
+}
+
+.columnsection{
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.header{
+    width: 100%
+}
+
+footer{
+    width: 100%
+}
+
+body{
+    background-color: rgba(0,0,0,0.85);
+}
+
+/*Formats the colors and decoration of links*/
+a:visited{
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#tabs a:link{
+    padding-right: 8%;
+    text-align: center;
+    align-content: center;
+}
+
+#address {
+    color: white;
+    text-align: center;
+}
+
+/*Sets image parameters for padding and size*/
+img{
+    padding-top: 5%;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+img.align-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Highlights current row being hovered over in table*/
+tr:hover{
+    background-color: darkslategrey;
+}
+
+th{
+    text-align: left;
+}
+
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px darkslategrey;
+}
+
+.tableimage {
+    max-width: 25%;
+    max-height: 30%;
+}
+
+ul{
+    color: white;
+}
+
+video{
+    padding-top: 5%;
+}
+
+/*Formatting for menu pictures on the menu.html page*/
+.menu_image{
+    max-width: 200px;
+    max-height: 200px;
+    padding-left: 37.5%;
+    padding-right: 10%
+}
+
+/*This section formats the menu items and pictures for alignment*/
+.menu_title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_items{
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.horizontalsection div.menu_info{
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Makes sure the menus stack on screens under 1200 pixels*/
+@media screen and (max-width: 1200px) {
+    .columnsection { margin: 1% 0 1% 0; width: 100%; }
+}
+
+/*Formatting for the keynote speaker images and text to be aligned*/
+div.horizontalsection div.keynote_speaker{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 20%;
+    padding-bottom: 5%;
+}
+div.horizontalsection div.keynote_speaker img.keynote_speaker_image{
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.horizontalsection div.keynote_speaker div.keynote_speaker_text{
+    text-align: center;
+    color: white;
+}
+
+div.horizontalsection div.keynote_speaker div.keynote_speaker_text fieldset.keynote_fieldset{
+    display: block;
+    alignment: center;
+    max-width: 100%;
+}
+
+.keynote_fieldset:hover{
+    background-color: darkslategrey;
+}
+
+/*Ensures that the keynote speakers stack if the screen is under 1200 px*/
+@media screen and (max-width: 1200px) {
+    .keynote_speaker {
+        margin: 1% 0 1% 0;
+        width: 100%;
+    }
+
+    .keynote_speaker_text{
+        font-size: 150%;
+    }
+}
+
+/*Formatting specifically for the awards table
+  Creates borders and adds padding
+*/
+table.awardTable tr td{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    color:white;
+}
+
+table.awardTable tr th{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    color:white;
+}
+
+/*Formatting for the tables within the schedule and registration pages*/
+div#workshopSchedule table, div#registration fieldset table{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+}
+
+div#workshopSchedule table tr th, div#registration fieldset table tr th{
+    padding: 10px 10px 10px 10px;
+    color:white;
+    font-weight: bold;
+}
+
+div#workshopSchedule table tr td, div#registration fieldset table fieldset table tr td{
+    padding: 10px 10px 10px 10px;
+    color:white;
+}
+
+legend{
+    color:white;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+label{
+    color:white;
+    display: block;
+    padding-bottom: .25%;
+}
+
+form{
+    display: block;
+    padding-bottom: .25%;
+}
+
+input [type="radio"]{
+    margin-right: 0;
+}
+
+div.centered_div{
+    display: block;
+    padding-top:5%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+li{
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1200px) {
+    #tabs{
+        font-size: 150%;
+    }
+}
+
+div#registration fieldset table form fieldset:hover{
+    background-color: darkslategrey;
+    font-weight: bold;
+}
+
+.poll_fieldset:hover{
+    background-color: darkslategrey;
+}
+
+
+.rules{
+    color: white;
+    text-indent: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    #voting{
+        font-size: 150%;
+    }
+}
+
+.nomineeInfo{
+    float: contour;
+    display: inline-block;
+    color: aqua;
+    font-weight: bold;
+}
+
+
+
+.menu:hover{
+    background-color: darkslategray;
+}
+
+.awardTable{
+    border: black;
+}
+
+p span.thankyouMessage{
+    font-weight: bold;
+    color: aqua;
+    font-size: 130%
+}
+
+html body main fieldset#userData span{
+    color: white;
+    font-size: large;
+    padding: 5px;
+    display: inline-block;
+}
+
+html body main fieldset#userData:hover{
+    background-color: darkslategray;
+}
+
+html body main form#lists fieldset#listsFieldset:hover{
+    background-color: darkslategray;
+}
+
+html body main form#lists fieldset#listsFieldset{
+    margin-top: 0.625em;
+}
+
+html body main form#lists fieldset#listsFieldset .listRadio{
+    margin: 0.625em;
+    cursor: pointer;
+}
+
+html body main form#lists input#listSubmit{
+    margin-top:0.625em;
+    cursor:pointer;
+}
+
+html body main div.listDisplay{
+    color: white;
+    font-size: larger;
+    margin-top: 0.625em;
+}
+
+html body main h1.listTitle{
+    color: darkslategray;
+}
+
+html body main div.loginDisplay{
+    text-align: center;
+    color: white;
+}
+
+html body main div.loginDisplay label.loginLabel input.username{
+    width: 12.5em;
+    height: 3.125em;
+}
+
+html body main div.loginDisplay label.loginLabel input.password{
+    width: 12.5em;
+    height: 3.125em;
+}
+
+html body main div.loginDisplay label.loginLabel
+{
+    font-size: x-large;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+html body main form div.loginDisplay input.loginButton{
+    width: 12.5em;
+    height: 3.125em;
+    background-color: transparent;
+    color:white;
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+html body main form div.loginDisplay input.loginButton:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}

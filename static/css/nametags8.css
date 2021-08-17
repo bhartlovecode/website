@@ -1,0 +1,93 @@
+html body.bodyForNameTags main div.horizontalRowEight{
+    width: 100%;
+    display: block;
+}
+
+.nameTagFirstNameEight{
+    color:black;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.nameTagPositionEight{
+    color:black;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightTopLeft{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding: 14mm 9mm 4.5mm 17mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightTopRight{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding-top: 14mm;
+    padding-right:17mm;
+    padding-bottom: 4.5mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightBottomLeft{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding-left:17mm;
+    padding-bottom: 14mm;
+    padding-right: 9mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightBottomRight{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding-right:17mm;
+    padding-bottom: 14mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightLeft{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding-bottom:4.5mm;
+    padding-left:17mm;
+    padding-right:9mm;
+    display:block;
+    float:left;
+
+}
+
+html body.bodyForNameTags main div.horizontalRowEight div.nameTagEightRight{
+    text-align: center;
+    width: 86mm;
+    height: 59mm;
+    padding-bottom:4.5mm;
+    padding-right:17mm;
+    display:block;
+    float:left;
+
+}
+
+
+html body.bodyForNameTags{
+    background-color: white;
+    width: 215mm;
+    margin: auto;
+    text-align: center;
+}
+

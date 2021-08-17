@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Thank You!</h1>
+    <p>You have successfully registered for the programming conference. We look forward to seeing you
+    here!</p>
+    <fieldset id = "userData">
+    <legend>Your Info:</legend>
+        <span>Date: {{ date|e }}</span><br/>
+        <span>Title: {{ myTitle|e }}</span><br/>
+        <span>First Name: {{ firstName|e }}</span><br/>
+        <span>Last Name: {{ lastName|e }}</span><br/>
+        <span>Address One: {{ addressOne|e }}</span><br/>
+        <span>Address Two (optional): {{ addressTwo|e }}</span><br/>
+        <span>City: {{ city|e }}</span><br/>
+        <span>State: {{ state|e }}</span><br/>
+        <span>Zip Code: {{ zipCode|e }}</span><br/>
+        <span>Telephone: {{ telephone|e }}</span><br/>
+        <span>Email: {{ email|e }}</span><br/><br/>
+        <span>Website: {{ website|e }}</span><br/>
+        <span>Position: {{ position|e }}</span><br/>
+        <span>Company: {{ company|e }}</span><br/><br/>
+        <span>Meal Choice: {{ mealChoice|e }}</span><br/><br/>
+        <span>Billing First Name: {{ billingFirstName|e }}</span><br/>
+        <span>Billing Last Name: {{ billingLastName|e }}</span><br/>
+        <span>Card Type: {{ cardType|e }}</span><br/>
+        <span>Card Number: {{ cardNumber|e }}</span><br/>
+        <span>CSV: {{ csv|e }}</span><br/>
+        <span>Exp Year: {{ expYear|e }}</span><br/>
+        <span>Exp Month: {{ expMonth|e }}</span><br/><br/>
+        <span>Session One: {{ sessionOne|e }}</span><br/>
+        <span>Session Two: {{ sessionTwo|e }}</span><br/>
+        <span>Session Three: {{ sessionThree|e }}</span><br/>
+    </fieldset>
+
+{% endblock %}

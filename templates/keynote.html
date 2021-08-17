@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Each keynote speaker div holds an image with a fieldset of text below -->
+    <div class=horizontalsection>
+        <div class=keynote_speaker>
+            <img class=keynote_speaker_image src=../static/images/keynote_speaker_one.jpg alt="David Knuth" title="David Knuth">
+            <div class=keynote_speaker_text>
+                <fieldset class=keynote_fieldset>
+                    <p><br/>
+                        Above is David Knuth. Knuth is a well-renowned computer scientist with a plethora of literature.
+                        Some of his work includes
+                        <a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">
+                            <i>The Art of Computer Programming</i>
+                        </a>and
+                        <a href="https://www.amazon.com/TeXbook-Donald-Knuth/dp/0201134489#:~:text=The%20novice%20need%20not%20learn,an%20unusually%20readable%20software%20manual.">
+                            <i>The TeXbook</i>.</a>
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+        <div class=keynote_speaker>
+            <img class=keynote_speaker_image src=../static/images/keynote_speaker_two.jpeg alt="Bill Gates" title="Bill Gates">
+            <div class=keynote_speaker_text>
+                <fieldset class=keynote_fieldset>
+                    <p><br/>
+                        Above is Bill Gates, co-founder of Microsoft. He holds a wealth of knowledge about both
+                        software and hardware, as well as the business side of computer science.
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+{% endblock %}

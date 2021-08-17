@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post" id="lists">
+    <fieldset id = "listsFieldset">
+        <label id="listsLabel">Select one of the following filters:<br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop A" required/>Workshop A <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop B" />Workshop B<br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop C"/>Workshop C <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop D"/>Workshop D <br/>
+            <input type = "radio" class = listRadio  name = "listOption" value="Workshop E"/>Workshop E <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop F"/>Workshop F <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop G"/>Workshop G <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop H"/>Workshop H <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="Workshop I"/>Workshop I <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="mealpack"/>MealPack <br/>
+            <input type = "radio" class = listRadio name = "listOption" value="dinnerday2"/>Dinner Day 2<br/>
+            <input type = "radio" class = listRadio name = "listOption" value="all"/>All Registrants<br/>
+        </label>
+    </fieldset>
+ <input type="submit" id="listSubmit" name="Submit" value="Submit" title="Submit"/>
+</form>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Two column sections will hold a menu image with a fieldset of menu items below -->
+    <div class=horizontalsection>
+        <div class=columnsection>
+            <img class="menu_image" src="../static/images/menu_image_one.jpeg" alt="First menu image">
+            <h2 class="menu_title">Menu Day One</h2>
+            <fieldset class = "menu">
+                <p class="menu_items"><br/>
+                    <b>Breakfast</b><br/>
+                    Pancakes, Bacon, Fruit, OJ <br/><br/>
+                    <b>Lunch</b><br/>
+                    Garden Salad, Tunafish Sandwiches, Pretzels, Water <br/><br/>
+                    <b>Dinner</b><br/>
+                    Steak, Mushrooms, Potatoes, Wine
+                </p>
+            </fieldset>
+        </div>
+        <div class=columnsection>
+            <img class="menu_image" src="../static/images/menu_image_two.jpg" alt="First menu image">
+            <h2 class="menu_title">Menu Day Two</h2>
+            <fieldset class = "menu">
+                <p class="menu_items"><br/>
+                    <b>Breakfast</b><br/>
+                    Waffles, Sausage, Fruit, Coffee <br/><br/>
+                    <b>Lunch</b><br/>
+                    BBQ Chicken, Corn on the Cob, Biscuits, Water <br/><br/>
+                    <b>Dinner</b><br/>
+                    Spaghetti, Garlic Bread, Wine
+                </p>
+            </fieldset>
+        </div>
+    </div>
+    <div class = "horizontalsection">
+    <div class=menu_info>
+            <br/>
+            Full Meal Package: $250.00 (includes Dinner Day 2)<br/>
+            Dinner Day 2: $75.00
+        </div>
+    </div>
+{% endblock %}

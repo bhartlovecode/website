@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+ <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="../static/js/voteLogic.js"></script>
+    <h1>
+        About the Poll
+    </h1>
+    <p>
+        Here are the three nominees (please select one to vote for the <i>Best in Programming</i> award):<br>
+    </p>
+    <form>
+        <fieldset class="poll_fieldset" id="voting">
+            <label><b>Nominees:</b><br/><br/>
+                <input type="radio" name="nominee" value="Eric S." id="Eric" class="vote" required="required"/> Eric S.
+                <span class="nomineeInfo" id="nomineeOne">Current Vote Count: </span><br/>
+                <input type="radio" name="nominee" id="Sally" value="Sally J." class="vote"/> Sally J.
+                <span class="nomineeInfo" id="nomineeTwo">Current Vote Count: </span><br/>
+                <input type="radio" name="nominee" id="Jesse" value="Jesse H." class="vote"/> Jesse H.
+                <span class="nomineeInfo" id="nomineeThree">Current Vote Count: </span><br/>
+            </label>
+
+        </fieldset>
+        <br/><br/>
+        <button type="button" class="submit" name="Submit" value="Submit" title="Submit" onclick="onVote()">Submit
+        </button>
+    </form>
+    <div id="d3-container"></div>
+{% endblock %}
